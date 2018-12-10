@@ -344,8 +344,8 @@ class StorageServiceClass(ServiceClass):
                         transfer_syntax.is_implicit_VR,
                         transfer_syntax.is_little_endian)
             # Trigger exception if bad dataset
-            for elem in ds:
-                pass
+            # for elem in ds:
+            #     pass
         except Exception as ex:
             LOGGER.error("Failed to decode the received dataset")
             LOGGER.exception(ex)
